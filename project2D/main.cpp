@@ -1,11 +1,11 @@
-#include "Application2D.h"
+#include "Ping.h"
 
 int main() {
 	
 	// allocation
-	auto app = new Application2D();
+	auto app = new Ping();
 
-	// initialise and loop
+	//// initialise and loop
 	app->run("AIE", 1280, 720, false);
 
 	// deallocation
