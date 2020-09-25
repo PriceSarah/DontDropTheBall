@@ -93,6 +93,7 @@ void PhysicsScene::checkForCollision()
 
 bool PhysicsScene::planeToPlane(PhysicsObject* object1, PhysicsObject* object2)
 {
+	//tells what happens when 2 planes collide
 	Plane* plane1 = dynamic_cast<Plane*>(object1);
 	Plane* plane2 = dynamic_cast<Plane*>(object2);
 	if (plane1 != nullptr && plane2 != nullptr) {
@@ -105,12 +106,14 @@ bool PhysicsScene::planeToPlane(PhysicsObject* object1, PhysicsObject* object2)
 
 bool PhysicsScene::planeToSphere(PhysicsObject* object1, PhysicsObject* object2)
 {
+	//tells what happens when a sphere and plane collide
 	sphereToPlane(object2, object1);
 	return false;
 }
 
 bool PhysicsScene::sphereToPlane(PhysicsObject* object1, PhysicsObject* object2)
 {
+	//tells what happens when a sphere and plane collide
 	Sphere* sphere = dynamic_cast<Sphere*>(object1);
 	Plane* plane = dynamic_cast<Plane*>(object2);
 	if (sphere != nullptr && plane != nullptr) {
@@ -138,6 +141,7 @@ bool PhysicsScene::sphereToPlane(PhysicsObject* object1, PhysicsObject* object2)
 
 bool PhysicsScene::sphereToSphere(PhysicsObject* object1, PhysicsObject* object2)
 {
+	//tells what happens when 2 spheres collide
 	Sphere* sphere1 = dynamic_cast<Sphere*>(object1);
 	Sphere* sphere2 = dynamic_cast<Sphere*>(object2);
 	if (sphere1 != nullptr && sphere2 != nullptr) {
