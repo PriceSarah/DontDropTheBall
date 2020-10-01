@@ -2,13 +2,13 @@
 
 int main() {
 
-	// allocation
+	/// allocation
 	auto app = new PhysicsSceneApp();
 
-	// initialise and loop
+	/// initialise and loop
 	app->run("AIE", 1280, 720, false);
 
-	// deallocation
+	/// deallocation
 	delete app;
 
 	return 0;

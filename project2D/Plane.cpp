@@ -3,21 +3,21 @@
 
 Plane::Plane() : PhysicsObject(PLANE)
 {
-	//set variables
+	///set variables
 	m_normal = glm::vec2(0.0f, 1.0f);
 	m_distanceToOrigin = 0.0f;
 }
 
 Plane::Plane(glm::vec2 normal, float distanceToOrigin) : PhysicsObject(PLANE)
 {
-	//set variables
+	///set variables
 	m_normal = glm::normalize(normal);
 	m_distanceToOrigin = distanceToOrigin;
 }
 
 void Plane::makeGizmo()
 {
-	//creates how the plane looks on screen
+	///creates how the plane looks on screen
 	float lineSegmentLength = 300;
 	glm::vec2 centerPoint = m_normal * m_distanceToOrigin;
 	glm::vec2 perpendicular(m_normal.y, -m_normal.x);
@@ -29,7 +29,7 @@ void Plane::makeGizmo()
 
 void Plane::resolveCollision(RigidBody* other, glm::vec2 contact)
 {
-	//applies the force to the objects
+	///applies the force to the objects
 	glm::vec2 collisionNormal = m_normal;
 	glm::vec2 relativeVelocity = other->getVelocity();
 
