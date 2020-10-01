@@ -3,6 +3,9 @@
 #include "Application.h"
 #include "Renderer2D.h"
 
+///
+/// The application that is run
+///
 class Application2D : public aie::Application {
 public:
 

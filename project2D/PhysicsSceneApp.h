@@ -4,6 +4,9 @@
 #include "PhysicsScene.h"
 #include "Sphere.h"
 
+///
+///The actual scene run in main
+///
 class PhysicsSceneApp : public aie::Application {
 public:
 	PhysicsSceneApp();

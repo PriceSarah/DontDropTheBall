@@ -1,6 +1,9 @@
 #pragma once
 #include "glm\ext.hpp"
 
+///
+/// Allows for the creation of different types of physics objects
+///
 enum ShapeType {
 	PLANE = 0,
 	SPHERE,

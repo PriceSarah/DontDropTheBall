@@ -2,6 +2,9 @@
 #include "PhysicsObject.h"
 #include "RigidBody.h"
 
+///
+///Initializes the 
+///
 class Plane : public PhysicsObject
 {
 public:

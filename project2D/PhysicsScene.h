@@ -3,6 +3,9 @@
 #include "glm\ext.hpp"
 #include <vector>
 
+///
+/// Creates the scene and the physics objects can have in it
+///
 class PhysicsScene
 {
 public:
